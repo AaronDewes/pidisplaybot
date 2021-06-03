@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "public": true,
+    "builds": [
+      {
+        "src": "package.json",
+        "config": {
+          "installCommand": "yarn"
+        }
+      }
+    ]
+}
