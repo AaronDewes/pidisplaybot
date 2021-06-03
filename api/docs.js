@@ -1,3 +1,5 @@
+
+
 // https://github.com/yagop/node-telegram-bot-api/issues/319#issuecomment-324963294
 // Fixes an error with Promise cancellation
 process.env.NTBA_FIX_319 = 'test';
@@ -31,7 +33,7 @@ module.exports = async (request, response) => {
 
             // Send our new message back in Markdown and
             // wait for the request to finish
-            //await bot.sendMessage(id, message, {parse_mode: 'Markdown'});
+            await bot.sendMessage(-1001311741768, "Someone submitted feedback on our form!", {parse_mode: 'Markdown'});
         }
     }
     catch(error) {
