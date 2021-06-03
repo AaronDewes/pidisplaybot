@@ -33,7 +33,7 @@ module.exports = async (request, response) => {
 
             // Send our new message back in Markdown and
             // wait for the request to finish
-            await bot.sendMessage(-1001311741768, "Someone submitted feedback on our form!", {parse_mode: 'Markdown'});
+            await bot.sendMessage("-1001311741768", "Someone submitted feedback on our form!", {parse_mode: 'Markdown'});
         }
     }
     catch(error) {
