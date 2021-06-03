@@ -20,7 +20,7 @@ module.exports = async (request, response) => {
         const { body } = request;
 
         // Ensure that this is a message being sent
-        if (body.message) {
+        //if (body.message) {
             // Retrieve the ID for this chat
             // and the text that the user sent
             //const { chat: { id }, text } = body.message;
@@ -34,7 +34,7 @@ module.exports = async (request, response) => {
             // Send our new message back in Markdown and
             // wait for the request to finish
             await bot.sendMessage("-1001311741768", "Someone submitted feedback on our form!", {parse_mode: 'Markdown'});
-        }
+        //}
     }
     catch(error) {
         // If there was an error sending our message then we 
